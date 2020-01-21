@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>
+        Add your values to the input field below, and select your preferred
+        position
+      </h2>
+
+      <div class="select-css">
+        <select id="default-position" class="relative">
+          <option value="absolute">Absolute</option>
+          <option value="fixed">Fixed</option>
+          <option value="static">Static</option>
+          <option value="sticky">Sticky</option>
+          <option value="relative" selected>Relative</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div>
+        <label for="move-up">Top</label>
+        <input
+          type="number"
+          id="move-up"
+          class="moves"
+          name="move-up"
+          placeholder="Move up"
+        />
+      </div>
+
+      <div>
+        <label for="move-down">Bottom</label>
+        <input
+          type="number"
+          id="move-down"
+          class="moves"
+          name="move-down"
+          placeholder="Move down"
+        />
+      </div>
+
+      <div>
+        <label for="move-left">Left</label>
+        <input
+          type="number"
+          id="move-left"
+          class="moves"
+          name="move-left"
+          placeholder="Move left"
+        />
+      </div>
+
+      <div>
+        <label for="move-right">Right</label>
+        <input
+          type="number"
+          id="move-right"
+          class="moves"
+          name="move-right"
+          placeholder="Move right"
+        />
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
